@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+
+    --letraA: 36px;
+    --letraB: 28px;
+    --parrafos: 30px;
+    --parrafosb: 22px;
+}
 
 body {
     background-color: rgb(37, 37, 37);
@@ -21,12 +28,6 @@ body {
     
 }
 
-.navegacion {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 80px;
-}
 
 .menu__anclas:hover{
     
@@ -43,6 +44,20 @@ body {
     align-items: center;
     flex-direction: column;
     
+    
+}
+
+.container__titulo{
+    display: flex;
+    padding-top: 10px;
+    
+}
+
+.lista__navegacion{
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+
 }
 
 .cabecera__logo {
@@ -55,7 +70,7 @@ body {
 }
 
 .parrafo {
-    font-size: 24px;
+    font-size: var(--parrafos);
 }
 
 .destaque__texto {
@@ -67,7 +82,7 @@ body {
 }
 
 .saludo {
-    font-size: 36px;
+    font-size: var(--letraA);
     font-weight: 400;
 }
 
@@ -103,7 +118,13 @@ body {
 .enlaces {
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
+}
+
+.enlaces__redes{
+    display: flex;
+    gap: 100px;
 }
 
 .anclas{
@@ -129,18 +150,18 @@ body {
    
     margin-top: 10%;
     margin-bottom: 20%;
-    font-size: 30px;
+    font-size: var(--parrafos);
     font-weight: 300;
     gap: 30px;
     display: flex;
     flex-direction: column;
 }
 
-.sobre__mi h1{
+.sobre__mi h2{
     margin-top: 10%;
     margin-bottom:5%;
     font-weight: 600;
-    font-size: 36px;
+    font-size: var(--letraA);
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
@@ -162,6 +183,7 @@ body {
     width: 30px;
     height: 30px;
     
+    
 }
 
 
@@ -172,7 +194,7 @@ body {
     gap: 45px;
 }
 
-.skill h1{
+.skill h2{
     margin-top: 10%;
     margin-bottom:5%;
     font-weight: 600;
@@ -184,7 +206,7 @@ body {
     
 }
 
-.hobbies h1{
+.hobbies h2{
     margin-top: 10%;
     margin-bottom:5%;
     font-weight: 600;
@@ -225,7 +247,7 @@ body {
 }
 
 
-.formacion__academica h1{
+.formacion__academica h2{
     margin-top: 10%;
     margin-bottom:5%;
     font-weight: 600;
@@ -246,11 +268,11 @@ body {
     
 }
 
-.exp h1 {
+.exp h2 {
     margin-top: 10%;
     margin-bottom:5%;
     font-weight: 600;
-    font-size: 36px;
+    font-size: var(--letraA);
     align-items: center;
     flex-direction: column-reverse;
     display: flex;
@@ -321,31 +343,28 @@ body {
 
 .rodapie {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 10px;
     margin-top: 25%;
 
 }
 
-.imagen__rodapie {
-    width: 364px;
-    height: 350px;
-    border-radius: 2px;
+.rodapie h2{
+
+    font-weight: 600;
+    font-size: var(--letraA);
+
 }
 
-.container__datos {
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 
 .datos {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 50px;
+    
+    gap: 10px;
     padding-top: 25px;
 }
 
@@ -362,28 +381,67 @@ footer{
 
 @media (max-width:768px) {
 
-   
+
 
     .container__principal {
         display: flex;
         flex-direction: column; /* Cambia a column */
-        width:100%;
-
+        max-width:100%;
+        margin:0;
+        
     }
 
+    
+
     .header {
-        width: 0%;
+        
         display: flex;
+        width: 100%;
+        height: auto;
+        color: #22D4FD;
+        height: 0;
+        
+    }
+
+
+
+    .container__navegacion{
+        
+        display: flex;
+        background-color: black;
+        height: 80px;
         justify-content: space-around;
-        z-index: 10;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
         
+    }
+
+    .container__titulo{
+        display: none;
+    }
         
+
+    
+
+    .lista__navegacion{
+        display: flex;
+        flex-direction: row;
+        max-width:100%;
+        gap: 45px;
     }
 
     .enlaces {
         margin-top: 50px;
         display: flex;
         gap: 20px;
+    }
+
+
+    .enlaces__redes{
+        display: flex;
+        gap: 2%;
+        
     }
 
     .enlaces__repositorios{
@@ -405,6 +463,20 @@ footer{
         text-align: center;
         
     }
+
+    .sobre__mi h2{
+
+        font-size: var(--letraB);
+    }
+
+    .sobre__mi p {
+        font-size: var(--parrafosb);
+    }
+    
+    .skill h2, .hobbies h2 , .formacion__academica h2{
+
+        font-size: var(--letraB);
+    }
     
 
     .lista__skills{
@@ -420,45 +492,25 @@ footer{
         height:100px;
         border-radius: 10px;
        
-       
-       
     }
 
-    .contenedor__boton {
-        height: 100%;
-        background-color: #0f1111;
-       
-    }
-
-
-    .btn-togle {
-        background-color: #22D4FD;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        height: 4%;
-       
-    }
-
-
-    .btn-togle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 5px 0;
-        
-    }
+    
 
     
     .descripcion {
         
         display: flex;
-        margin-top: 0;
-        gap: 50px;
-        width: 100%;
+        width: 95%;
+        word-break: keep-all;
+       
+    }
+
+    
+
+    .saludo{
         
-        
+        font-size: 28px;
+        font-weight: 400;
     }
 
     .parrafo__navegacion{
@@ -467,9 +519,11 @@ footer{
         width: 80%;
     }
 
-    .container__presentacion {
-        max-width: 100%;
+    .parrafo{
+        font-size: var(--parrafosb);
     }
+
+    
 
     .imagen__perfil {
         width: 15rem;
@@ -481,11 +535,6 @@ footer{
 
 
 
-    .container__navegacion {
-        background-color: black; 
-        padding: 50px;
-        transition: all 0.5s ease;
-    }
 
     .contenedor__expimagen{
 
@@ -497,11 +546,13 @@ footer{
         
     }
 
-    .exp h1 {
+    .exp h2 {
         
+        font-size: 28px;
         white-space: nowrap;
     }
 
+    
     
     
 
@@ -519,12 +570,11 @@ footer{
     }
 
     footer{
-
-    position: fixed;
     bottom:0;
     width: 100%;
-
     }
+
+}
 
     
 
@@ -532,7 +582,7 @@ footer{
     
 
  
-}
+
 
 
 

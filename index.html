@@ -1,172 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio</title>
+    <meta name="description" content="Portafolio de Deivi Vargas, desarrollador frontend en formación, con proyectos, habilidades y contacto.">
+    <title>Portafolio</title>
     <link rel="stylesheet" href="resset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Encabezado principal con navegación -->
     <header class="header">
-        <div class="contenedor__boton">
-    
-            <button class="btn-togle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>    
-        </div>
-        <section class="container__navegacion">
+        <nav class="container__navegacion" aria-label="Navegación principal">
             <div class="container__titulo">
-                <img class="cabecera__logo" src="./assets/vector.png" alt="logo">
-                <h3 class="nombre">Deivi Vargas</h3>
+                <img class="cabecera__logo" src="./assets/vector.png" alt="Logotipo de Deivi Vargas">
+                <h1 class="nombre">Deivi Vargas</h1>
             </div>
-            <ul class="lista__navegacion">
-                <nav class="navegacion">
-                    <a class="menu__anclas" href="#skills">Skills</a>
-                    <a class="menu__anclas" href="#hobbies">Hobbies</a>
-                    <a class="menu__anclas" href="#formacion">Formación</a>
-                    <a class="menu__anclas" href="#proyectos">Proyectos</a>
-                </nav>
+            <ul class="lista__navegacion" role="menubar">
+                <li><a class="menu__anclas" href="#skills">Skills</a></li>
+                <li><a class="menu__anclas" href="#hobbies">Hobbies</a></li>
+                <li><a class="menu__anclas" href="#formacion">Formación</a></li>
+                <li><a class="menu__anclas" href="#proyectos">Proyectos</a></li>
             </ul>
-    
-        </section>
+        </nav>
     </header>
   
     <main class="container__principal">
-        <section class="descripcion">
-            <h1 class="saludo">HOLA!!, un placer, Mi nombre es Deivi Vargas y construyo páginas web</h1>  
-            <img class="imagen__perfil" src="./assets/perfil.jpeg" alt="">
+        <section class="descripcion" aria-labelledby="introduccion">
+            <p class="saludo">¡HOLA!, un placer, Mi nombre es Deivi Vargas y construyo páginas web.</p>
+            <figure>
+                <img class="imagen__perfil" src="./assets/perfil.jpeg" alt="Foto de perfil de Deivi Vargas">
+                <figcaption class="descripciones">Deivi Vargas, desarrollador frontend</figcaption>
+            </figure>
         </section>
 
-        <section class="parrafo__navegacion">
-            <p class="parrafo">Me estoy formando en <strong class="destaque__texto">programación frontend</strong> y actualmente estoy participando del proyecto Oracle <strong class="destaque__ONE">ONE en Alura Latam.</strong></p>
-            <nav class="enlaces">
-                <a href="https://github.com/DeiviV7" class="anclas">GitHub <img src="./assets/asset 2/github.png"></a>
-                <a href="https://www.linkedin.com/in/deivi-vargas-/" class="anclas">Linkedin <img src="./assets/asset 2/linkedin.png"></a>
-                <a href="https://www.instagram.com/dvargas_74?utm_source=qr" class="anclas">Instagram <img src="./assets/asset 2/instagram.png"></a>
-                <!-- <a href="" class="a">Currículo </a> -->
+        <section class="parrafo__navegacion" aria-labelledby="informacion-personal">
+            
+            <p class="parrafo">Me estoy formando en <strong class="destaque__texto">programación frontend</strong> y actualmente estoy participando en el proyecto Oracle <strong class="destaque__ONE">ONE en Alura Latam.</strong></p>
+            <nav class="enlaces" aria-label="Enlaces a redes sociales">
+                <ul class="enlaces__redes">
+                    <li><a href="https://github.com/DeiviV7" class="anclas">GitHub <img src="./assets/asset 2/github.png" alt="Icono de GitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/deivi-vargas-/" class="anclas">LinkedIn <img src="./assets/asset 2/linkedin.png" alt="Icono de LinkedIn"></a></li>
+                    <li><a href="https://www.instagram.com/dvargas_74?utm_source=qr" class="anclas">Instagram <img src="./assets/asset 2/instagram.png" alt="Icono de Instagram"></a></li>
+                </ul>
             </nav>
-        </section>    
+        </section>      
 
-        <section class="sobre__mi">
-            <h1> <samp class="lineas__presentacion"></samp> Sobre Mi</h1>
-            
-            <p>Estudiante en desarrollo frontend. Apasionado por crear experiencias de usuarios innovadoras y responsivas en el ámbito tecnológico.</p> 
-            <p>  Sería un placer para mí sumergirme en un entorno laboral que me permita poner a prueba mis conocimientos y seguir mejorando mis habilidades.</p>
+         <section class="sobre__mi" aria-labelledby="sobre-mi">
+            <h2 ><samp class="lineas__presentacion"></samp> Sobre Mí</h2>
+            <p>Estudiante en desarrollo frontend, apasionado por crear experiencias de usuario innovadoras y responsivas en el ámbito tecnológico.</p> 
+            <p>Sería un placer para mí sumergirme en un entorno laboral que me permita poner a prueba mis conocimientos y seguir mejorando mis habilidades.</p>
         </section>
             
-        <section id="skills" class="skill">
-            <h1> <samp class="lineas__presentacion"></samp>SKILLS</h1>
+        <section id="skills" class="skill" aria-labelledby="skills-title">
+            <h2 id="skills-title"> <samp class="lineas__presentacion"></samp>Skills</h2>
             <ul class="lista__skills">
                 <li class="itens__skills">
-                    
-                    <img class="imagenes" src="./assets/htlm.png" alt="">
-                    <p class="parrafo_skills">HTML</p>
-                    
+                    <figure>
+                        <img class="imagenes" src="./assets/htlm.png" alt="Icono de HTML">
+                        <figcaption>HTML</figcaption>
+                    </figure>
                 </li>
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/css_icon.png" alt="">
-                    <p>CSS</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/css_icon.png" alt="Icono de CSS">
+                        <figcaption>CSS</figcaption>
+                    </figure>
                 </li>
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/react_icon.png" alt="">
-                    <p>REACT</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/react_icon.png" alt="Icono de React">
+                        <figcaption>React</figcaption>
+                    </figure>
                 </li>
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/js_icon.png" alt="">
-                    <p>JavaScript</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/js_icon.png" alt="Icono de JavaScript">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
                 </li>
             </ul>
         </section>
 
     
-        <section id="hobbies"  class="hobbies">
-            <h1> <samp class="lineas__presentacion"></samp> HOBBIES</h1>
+        <section id="hobbies" class="hobbies" aria-labelledby="hobbies-title">
+            <h2 id="hobbies-title"><samp class="lineas__presentacion"></samp> Hobbies</h2>
             <ul class="lista__skills">
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/asset 2/moto.jpeg" alt="">
-                    <p>Turismo en moto</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/asset 2/moto.jpeg" alt="Imagen de moto, indicando que uno de los hobbies es el turismo en moto">
+                        <figcaption>Turismo en moto</figcaption>
+                    </figure>
                 </li>
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/asset 2/futbol.jpeg" alt="">
-                    <p>Fútbol</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/asset 2/futbol.jpeg" alt="Imagen de un balón de fútbol">
+                        <figcaption>Fútbol</figcaption>
+                    </figure>
                 </li>
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/asset 2/juego.jpeg" alt="">
-                    <p>Video Juegos</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/asset 2/juego.jpeg" alt="Imagen de mando de videojuegos">
+                        <figcaption>Videojuegos</figcaption>
+                    </figure>
                 </li>
                 <li class="itens__skills">
-                    <img class="imagenes" src="./assets/asset 2/socializar.jpeg" alt="">
-                    <p>Socializar</p>
+                    <figure>
+                        <img class="imagenes" src="./assets/asset 2/socializar.jpeg" alt="Imagen de un grupo de personas socializando">
+                        <figcaption>Socializar</figcaption>
+                    </figure>
                 </li>
             </ul>
         </section>
     
-        <section id="formacion" class="formacion__academica">
-            <h1> <samp class="lineas__presentacion"></samp>FORMACIÓN</h1>
-            <img class="img__alura" src="./assets/alura_logo.png" alt=""  height="300px">
-            <h3 class="formacion__nombre">Formación en UX Design</h3>
-            <p class="formacion__detalle">2024 - Alura</p>
+        <section id="formacion" class="formacion__academica" aria-labelledby="formacion-title">
+            <h2 id="formacion-title"> <samp class="lineas__presentacion"></samp>Formación Académica</h2>
+            <figure>
+                <img class="img__alura" src="./assets/alura_logo.png" alt="Logotipo de Alura Latam" height="300px">
+                <figcaption>Formación en UX Design - Alura (2024)</figcaption>
+            </figure>
         </section>
         
-    <section id="proyectos" class="exp">
-        <h1> <samp class="lineas__presentacion"></samp>Experiencias Profesionales</h1>
-            <section class="experiencias">
+    <section id="proyectos" class="exp" aria-labelledby="proyectos-title" >
+        <h2> <samp class="lineas__presentacion"></samp>Experiencias Profesionales</h2>
+            <article class="experiencias">
                 <div class="contenedor__expimagen">
                     <div class="container__experiencias">
-                        <h1>Encriptador de texto</h1>
+                        <h2>Encriptador de texto</h2>
                         <p>challenger alura codificador</p>
-                        <div class="enlaces__repositorios">
+                        <nav class="enlaces__repositorios">
                         <a href="https://github.com/DeiviV7/encriptador-texto.git" class="link__repositorios">Repositorio</a>
                         <a href="" class="link__demo">Ver Demo</a>
-                        </div>    
+                        </nav>    
                     </div>
-                    <img src="./assets/asset 2/encriptador.png" alt="" width="752px" height="300px">
+                    <img src="./assets/asset 2/encriptador.png" alt="Captura de pantalla del proyecto de encriptador de texto" width="752px" height="300px">
                 </div>
-            </section>     
+            </article>     
 
-            <div class="interfaz">
+            <article class="interfaz">
                 <div class="imagenes__login">
-                    <img src="./assets/asset 2/login.png" alt="" width="900px" height="300px">
-                    <img src="./assets/asset 2/verificador.png" alt="" width="752px" height="300px">
+                    <img src="./assets/asset 2/login.png" alt="Captura de pantalla de la interfaz de login" width="900px" height="300px">
+                    <img src="./assets/asset 2/verificador.png" alt="Captura de pantalla del verificador de inicio de sesión" width="752px" height="300px">
                 </div>
 
                 <div class="container__experiencias">
-                <h1>Interfaz Login</h1>
+                <h2>Interfaz Login</h2>
                 <p>Practica Personal</p>
-                 <div class="enlaces__login">  
+                 <nav class="enlaces__login">  
                     <a href="https://github.com/DeiviV7/login-de-practica.git" class="link__repositorios">Repositorio</a>
                     <a href=""  class="link__demo">Ver Demo</a>
-                </div>   
+                 </nav>   
                 </div>   
 
-            </div>
+            </article>
         </section> 
     
 
-    <section class="rodapie">
-        <div class="container__datos">
-            <h1>Contacto</h1>
-            <p>¿Quieres contactarme?</p>
-            <p>Completa el siguiente formulario.</p>
-            <div class="datos">
-                <input type="text" class="input" placeholder="Nombre">
-                <input type="email" class="input" placeholder="Email">
-                <textarea class="asunto" placeholder="Asunto"></textarea>
-                <textarea class="mensaje" placeholder="Mensaje"></textarea>
-                <button onclick="" class="link__repositorios" >Enviar Mensaje</button>
-            </div>
-        </div>   
-        <img class="imagen__rodapie" src="./assets/asset 2/telefono.jpeg">
-    </section> 
-
+        <section class="rodapie" aria-labelledby="contacto-title">
+            <h2 id="contacto-title">Contacto</h2>
+            <p>¿Quieres contactarme? Completa el siguiente formulario.</p>
+            <form class="datos" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="input" id="nombre" name="nombre" placeholder="Nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" class="input" id="email" name="email" placeholder="Email" required>
+                
+                <label for="asunto">Asunto:</label>
+                <textarea class="asunto" id="asunto" name="asunto" placeholder="Asunto" required></textarea>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="mensaje" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                
+                <button type="submit" class="link__repositorios">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
 
-    <footer>Dasarrollado Deivi Vargas®</footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>Desarrollado por Deivi Vargas®</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -1,14 +1,3 @@
-//La validación del formulário con javascript es considerada un desafío extra, no es obligatório realizar esta validación para realizar su entrega
-const btnToggle = document.querySelector('.btn-togle');
-const menu = document.querySelector('.container__navegacion');
-
-
-
-btnToggle.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'none' ? 'flex' : 'none'
-    btnToggle.classList.toggle('open'); // Agrega o quita la clase "open" al botón
-    menu.classList.toggle('open'); // Agrega o quita la clase "open" al menú
-});
 
 
 const enlaces = document.querySelectorAll('a[href^="#"]');
