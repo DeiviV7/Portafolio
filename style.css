@@ -385,9 +385,11 @@ footer{
 
     .container__principal {
         display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 10px;
+        flex-direction: column; /* Cambia a column */
+        width:100%;
+        margin:0;
+        text-align: center;
+        
     }
 
     
@@ -441,18 +443,24 @@ footer{
         display: flex;
         gap: 2%;
         
+        
     }
+    
 
     .enlaces__repositorios{
         gap: 40px;
          display: flex;
          margin-top: 10%;
+         display: flex;
+        justify-content: center;
      }
 
      .enlaces__login{
         gap: 40px;
         display: flex;
         margin-top: 10%;
+        display: flex;
+        justify-content: center;
     }
      
 
@@ -499,7 +507,7 @@ footer{
     .descripcion {
         
         display: flex;
-        width: 95%;
+        max-width: 95%;
         word-break: keep-all;
        
     }
@@ -532,6 +540,16 @@ footer{
         margin-top: 0%;
     }
 
+    .img__encriptador{
+        width:90% ;
+        height:60% ;
+    }
+
+    .img__login{
+        width: 90%;
+        height: 60%;
+        
+    }
 
 
 
@@ -575,6 +593,117 @@ footer{
 
 }
 
+@media (max-width:378px){
+
+
+    .header{
+
+        width: 100%;
+        
+    }
+
+    .lista__navegacion{
+       margin-left: 25px;
+        gap: 10%;
+   }
+    
+
+    .container__principal{
+
+        display: flex;
+        text-align: center;
+    }
+
+    .descripcion{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .imagen__perfil{
+
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .saludo{
+
+        font-size: 20px;
+    }
+
+    .parrafo{
+
+        font-size: 16px;
+    }
+
+    .enlaces__redes{
+
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .enlaces__redes a{
+        
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .anclas{
+        font-size: 10px;
+    }
+
+    .container__navegacion{
+
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+        max-width:100%;
+    }
+
+   
+    .img__alura{
+
+        width: 50%;
+        height: 50%;
+    }
+
+    .img__encriptador{
+        width:80% ;
+        height:80% ;
+    }
+
+    .img__login{
+        width: 80%;
+        height: 50%;
+    }
+
+    .img__redes{
+        height: 25%;
+        width: 25%;
+    }
+
+    .formacion__academica figure{
+        text-align: center;
+
+    }
+
+    .container__experiencias h2{
+
+        font-size: 25px;
+
+    }
+
+    .enlaces__repositorios, .enlaces__login{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    
+   
+}
     
 
     
