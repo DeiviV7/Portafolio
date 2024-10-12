@@ -99,7 +99,7 @@ body {
 .descripcion {
     display: flex;
     align-items: center;
-    margin-top: 18%; 
+    margin-top: 10%; 
     margin-right: 5px;
 }
 
@@ -222,7 +222,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .itens__skills{
@@ -534,7 +534,7 @@ footer{
         display: flex;
         max-width: 95%;
         word-break: keep-all;
-        margin-top: 20%;
+        margin-top: 25%;
     }
 
     
