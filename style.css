@@ -99,7 +99,7 @@ body {
 .descripcion {
     display: flex;
     align-items: center;
-    margin-top: 25%; 
+    margin-top: 18%; 
     margin-right: 5px;
 }
 
@@ -534,7 +534,7 @@ footer{
         display: flex;
         max-width: 95%;
         word-break: keep-all;
-       
+        margin-top: 20%;
     }
 
     
